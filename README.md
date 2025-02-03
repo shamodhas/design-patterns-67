@@ -203,20 +203,55 @@ DrivingStrategy, BikingStrategy. At runtime, the travel method can be switched a
 
 ---
 
+## Architectural Patterns
+
+In addition to the lower-level design patterns, architectural patterns address the high-level structure of a software system. They provide overarching guidelines and structures for organizing the components of an application.
+
+### 1. Model-View-Controller (MVC)
+
+**Purpose:**  
+Separates the application into three interconnected components:
+- **Model:** Manages the data and business logic.
+- **View:** Represents the user interface.
+- **Controller:** Handles user input and interacts with the model to update the view.
+
+### 2. Layered Architecture
+
+**Purpose:**  
+Divides the system into layers, each with a specific responsibility. Common layers include:
+- **Presentation Layer:** Handles the user interface.
+- **Business Layer:** Contains the business logic.
+- **Data Access Layer:** Manages data storage and retrieval.
+
+### 3. N-tier Architecture
+
+**Purpose:**  
+Similar to layered architecture but emphasizes physical separation between tiers (e.g., client, server, database), which can be distributed across different machines.
+
+### 4. Client-Server
+
+**Purpose:**  
+Divides the system into service providers (servers) and service consumers (clients). The server offers resources or services, while the client requests and consumes these services.
+
+### 5. Monolithic Architecture
+
+**Purpose:**  
+A single unified software system where components are tightly interconnected. While simple to develop initially, monolithic systems can become difficult to scale and maintain as they grow.
+
+### 6. Microservices Architecture
+
+**Purpose:**  
+Breaks down a system into smaller, independent services that communicate over well-defined APIs. This approach offers greater flexibility, scalability, and ease of deployment compared to monolithic systems.
+
+---
+
 ## Summary
 
-Each of these design patterns serves a specific purpose:
+Each of these design patterns and architectural patterns serves a specific purpose:
 
-- **Creational Patterns** manage how objects are created.
-- **Structural Patterns** simplify the relationships and interactions between classes.
-- **Behavioral Patterns** manage the flow of control and responsibilities between objects.
+- **Creational Patterns** manage object creation and ensure the proper use of instances.
+- **Structural Patterns** simplify the relationships and interactions between classes and subsystems.
+- **Behavioral Patterns** manage how objects interact and communicate with each other, ensuring that the system responds dynamically to changes.
+- **Architectural Patterns** define the high-level organization and structure of an application, addressing issues like separation of concerns, scalability, and maintainability.
 
-Feel free to extend this document with code examples in your preferred programming language or further detailed
-explanations for each pattern.
-
-## Conclusion
-
-Design patterns are a fundamental part of software development, helping create scalable, maintainable, and efficient
-applications. By understanding and applying these patterns, developers can write better-structured and more flexible
-code.
-
+Feel free to extend this document with code examples in your preferred programming language or further detailed explanations for each pattern.
